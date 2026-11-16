@@ -174,7 +174,7 @@
       width: min(340px, 84%);
       aspect-ratio: 1;
       border-radius: 50%;
-      background: #eee7d6;
+      background: radial-gradient(circle at 50% 35%, #f8f3ea 0%, #efe5d4 55%, #e7dcc2 100%);
       content: "";
     }
 
@@ -567,37 +567,52 @@
         <p class="hero-desc">味噌の香りに誘われて。濃厚スープをすすって。<br>大久保の商店街と駅のまわりで、街の人に愛される麺のお店を集めました。</p>
         <a class="primary-link" href="#shops">お気に入りの一杯を探す <span aria-hidden="true">→</span></a>
       </div>
-      <div class="hero-art" role="img" aria-label="湯気の立つラーメンどんぶりのイラスト">
+      <div class="hero-art" role="img" aria-label="真横から見た、中華模様の丼から箸で麺を持ち上げるラーメンのイラスト">
         <svg class="ramen-illustration" viewBox="0 0 400 330" aria-hidden="true" focusable="false">
-          <g fill="none" stroke="#2f5c48" stroke-linecap="round" stroke-width="6">
-            <path d="M151 79c-15-16 9-25-3-43M201 71c-13-19 12-29 1-49M250 79c-12-17 10-24 0-40"/>
-          </g>
-          <ellipse cx="200" cy="286" rx="120" ry="15" fill="#1d2925" opacity=".1"/>
-          <path d="M75 143h250l-27 102c-8 31-188 31-196 0z" fill="#e66c43" stroke="#1d2925" stroke-linejoin="round" stroke-width="9"/>
-          <path d="M95 218c60 23 150 23 210 0" fill="none" stroke="#f4b184" stroke-linecap="round" stroke-width="7"/>
-          <path d="M88 240c61 19 163 19 224 0" fill="none" stroke="#1d2925" stroke-linecap="round" stroke-width="4" opacity=".35"/>
-          <ellipse cx="200" cy="143" rx="125" ry="47" fill="#1d2925"/>
-          <ellipse cx="200" cy="139" rx="112" ry="37" fill="#e9b955"/>
-          <g fill="none" stroke="#f8e6ab" stroke-linecap="round" stroke-width="6">
-            <path d="M113 143c22-30 47 29 70-2s44-27 58 1 36 23 47-3"/>
-            <path d="M128 124c18 27 35-20 54 4s39 25 54 1 27-16 39 5"/>
-            <path d="M132 159c17-17 33-14 47 2s36 13 48-5 35-18 51-1"/>
-          </g>
-          <path d="M106 113 91 73c-2-6 2-10 8-7l37 23z" fill="#294d3a" stroke="#1d2925" stroke-linejoin="round" stroke-width="5"/>
-          <circle cx="163" cy="132" r="22" fill="#c87957" stroke="#f8e6ab" stroke-width="5"/>
-          <path d="M151 133c5-12 21-12 25-2 4 9-8 15-15 10-5-3-3-9 2-10" fill="none" stroke="#f8e6ab" stroke-linecap="round" stroke-width="4"/>
-          <ellipse cx="230" cy="128" rx="23" ry="19" fill="#fffefa" stroke="#d7c9a0" stroke-width="4"/>
-          <circle cx="233" cy="129" r="9" fill="#e66c43"/>
-          <path d="M278 129c0-11 13-15 18-6 5-9 18-5 18 6 0 10-18 21-18 21s-18-11-18-21z" fill="#f3f0d7" stroke="#d7c9a0" stroke-width="3"/>
-          <g fill="#4a7650">
-            <circle cx="188" cy="111" r="5"/>
-            <circle cx="264" cy="112" r="5"/>
-            <circle cx="199" cy="164" r="5"/>
-            <circle cx="252" cy="157" r="4"/>
-          </g>
-          <g fill="none" stroke="#1d2925" stroke-linecap="round" stroke-width="5">
-            <path d="m271 56 70 69"/>
-            <path d="m285 48 70 69"/>
+          <g>
+            <path d="M82 158c10 48 25 91 51 115 15 14 38 22 67 22s52-8 67-22c26-24 41-67 51-115H82Z" fill="#f7f4e9" stroke="#1d2925" stroke-width="8" stroke-linejoin="round"/>
+            <path d="M100 213c30 17 65 24 100 24s70-7 100-24" fill="none" stroke="#285f87" stroke-width="7" stroke-linecap="round"/>
+            <path d="M104 226c28 17 60 25 96 25s68-8 96-25" fill="none" stroke="#c94d3b" stroke-width="3" stroke-linecap="round"/>
+            <path d="M95 170c29 18 67 26 105 26s76-8 105-26" fill="none" stroke="#285f87" stroke-width="4"/>
+            <ellipse cx="200" cy="160" rx="118" ry="38" fill="#f7f4e9" stroke="#1d2925" stroke-width="6"/>
+            <ellipse cx="200" cy="158" rx="108" ry="30" fill="#8f4e2e" stroke="#285f87" stroke-width="3"/>
+            <ellipse cx="200" cy="154" rx="97" ry="23" fill="#a96336"/>
+
+            <g fill="none" stroke="#f2d48a" stroke-linecap="round" stroke-width="5">
+              <path d="M115 153c15-13 29 11 45 0s29-10 44 1 29 11 44 0 29-8 43 2"/>
+              <path d="M128 163c16-10 28 8 43 0 14-8 27-6 40 1 15 8 29 5 42-2s25-4 38 1"/>
+            </g>
+
+            <g>
+              <ellipse cx="151" cy="150" rx="19" ry="14" fill="#f4f0dc" stroke="#d8caa5" stroke-width="3"/>
+              <circle cx="153" cy="150" r="7" fill="#e66c43"/>
+              <path d="M246 153c0-11 14-15 19-6 6-9 19-5 19 6 0 10-19 21-19 21s-19-11-19-21Z" fill="#f5f0d9" stroke="#d8caa5" stroke-width="3"/>
+              <path d="M197 137c12-12 28-12 40 0-5 10-11 17-20 21-9-4-15-11-20-21Z" fill="#2f5c48"/>
+            </g>
+
+            <g fill="none" stroke="#285f87" stroke-linecap="round" stroke-width="3">
+              <path d="M163 267c10-9 20-9 30 0s20 9 30 0 20-9 30 0"/>
+              <path d="M171 276c8-6 16-6 24 0s16 6 24 0 16-6 24 0"/>
+            </g>
+            <circle cx="200" cy="266" r="4" fill="#c94d3b"/>
+            <path d="M171 296c4 7 14 10 29 10s25-3 29-10" fill="none" stroke="#285f87" stroke-width="5" stroke-linecap="round"/>
+
+            <g fill="none" stroke="#f8e6ab" stroke-width="5" stroke-linecap="round">
+              <path d="M199 151c-5-16 5-27 21-35 15-8 22-16 24-28"/>
+              <path d="M207 153c-1-16 11-27 25-34 14-7 22-16 25-29"/>
+              <path d="M215 153c4-15 16-23 29-30 13-7 21-15 24-27"/>
+              <path d="M223 153c9-13 22-20 34-27 11-7 18-15 22-25"/>
+              <path d="M194 145c1-13 11-22 25-29 12-6 18-14 20-25"/>
+            </g>
+
+            <g stroke="#65432c" stroke-width="8" stroke-linecap="round">
+              <path d="m290 16-70 105"/>
+              <path d="m313 20-74 105"/>
+            </g>
+            <g stroke="#b9824b" stroke-width="2.5" stroke-linecap="round">
+              <path d="m290 16-70 105"/>
+              <path d="m313 20-74 105"/>
+            </g>
           </g>
         </svg>
         <div class="art-stamp" aria-hidden="true">麺のまち<br>大久保</div>
@@ -606,7 +621,7 @@
 
     <div class="wrap intro-strip" aria-label="掲載店舗の概要">
       <span><strong>駅前から商店街の先まで、歩いて見つかる麺の個性。</strong></span>
-      <span><span class="count">08</span> PICKED SHOPS</span>
+      <span><span class="count">12</span> PICKED SHOPS</span>
     </div>
 
     <section class="wrap shops-section" id="shops" aria-labelledby="shops-title">
@@ -615,7 +630,7 @@
           <p class="eyebrow">FIND YOUR FAVORITE</p>
           <h2 id="shops-title">大久保の、麺めぐり。</h2>
         </div>
-        <p class="section-note">商店街と京成大久保駅周辺から、個性の違う8店をピックアップ。<br>気分に合わせて、今日の一軒を見つけてください。</p>
+        <p class="section-note">習志野市大久保の商店街と駅周辺から、個性の違う12店をピックアップ。<br>気分に合わせて、今日の一軒を見つけてください。</p>
       </div>
 
       <div class="toolbar">
@@ -632,7 +647,7 @@
         </label>
       </div>
 
-      <p class="results-line" id="results-count" aria-live="polite">8店を掲載中</p>
+      <p class="results-line" id="results-count" aria-live="polite">12店を掲載中</p>
 
       <div class="shop-grid" id="shop-grid">
         <article class="shop-card" data-tags="miso" data-search="パンケ 札幌 味噌 みそ 西山麺">
@@ -641,7 +656,6 @@
           <p class="shop-desc">熟成味噌のコクと札幌直送の西山麺。地元で長く親しまれる味噌ラーメン。</p>
           <p class="shop-address">習志野市大久保 2-1-1</p>
           <div class="card-links">
-            <a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%82%89%E3%83%BC%E3%82%81%E3%82%93%E3%83%91%E3%83%B3%E3%82%B1%20%E7%BF%92%E5%BF%97%E9%87%8E%E5%B8%82%E5%A4%A7%E4%B9%85%E4%BF%9D2-1-1" target="_blank" rel="noopener noreferrer">地図を見る ↗</a>
             <a href="https://www.facebook.com/ramenpanke/" target="_blank" rel="noopener noreferrer">お店の情報 ↗</a>
           </div>
         </article>
@@ -652,7 +666,6 @@
           <p class="shop-desc">麺にしっかり絡む濃厚スープ。豚そば、鶏そば、つけ麺と食べ比べも。</p>
           <p class="shop-address">習志野市大久保 3-12-5</p>
           <div class="card-links">
-            <a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%81%A9%E3%82%8D%E3%81%9D%E3%81%B0%E5%B1%8B%E3%81%B2%E3%82%8D%E3%81%97%20%E7%BF%92%E5%BF%97%E9%87%8E%E5%B8%82%E5%A4%A7%E4%B9%85%E4%BF%9D3-12-5" target="_blank" rel="noopener noreferrer">地図を見る ↗</a>
             <a href="https://x.com/dorosobaya" target="_blank" rel="noopener noreferrer">お店の情報 ↗</a>
           </div>
         </article>
@@ -663,7 +676,6 @@
           <p class="shop-desc">名物は見た目も楽しいダムカレーラーメン。あっさり系を中心に多彩な麺が揃う。</p>
           <p class="shop-address">習志野市大久保 3-13-4</p>
           <div class="card-links">
-            <a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%BA%BA%E5%AE%B6%E8%A5%BF%E9%99%A3%20%E7%BF%92%E5%BF%97%E9%87%8E%E5%B8%82%E5%A4%A7%E4%B9%85%E4%BF%9D3-13-4" target="_blank" rel="noopener noreferrer">地図を見る ↗</a>
             <a href="https://x.com/menya_nishijin" target="_blank" rel="noopener noreferrer">お店の情報 ↗</a>
           </div>
         </article>
@@ -674,7 +686,6 @@
           <p class="shop-desc">鶏の旨みを味わう鶏白湯が看板。醤油・塩など、好みの味で楽しめる一杯。</p>
           <p class="shop-address">習志野市大久保 1-18-9</p>
           <div class="card-links">
-            <a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%BA%BA%E5%B1%8B%E6%99%82%E8%8C%82%20%E7%BF%92%E5%BF%97%E9%87%8E%E5%B8%82%E5%A4%A7%E4%B9%85%E4%BF%9D1-18-9" target="_blank" rel="noopener noreferrer">地図を見る ↗</a>
             <a href="https://x.com/TS_KEISEIOOKUBO" target="_blank" rel="noopener noreferrer">お店の情報 ↗</a>
           </div>
         </article>
@@ -685,7 +696,6 @@
           <p class="shop-desc">濃厚な豚骨醤油と自家製麺が自慢。しっかり食べたい日にうれしい一杯。</p>
           <p class="shop-address">習志野市大久保 3-12-11</p>
           <div class="card-links">
-            <a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%88%AF%E6%8B%89%E6%88%AF%E6%8B%89%20%E4%BA%AC%E6%88%90%E5%A4%A7%E4%B9%85%E4%BF%9D%E5%BA%97" target="_blank" rel="noopener noreferrer">地図を見る ↗</a>
             <a href="https://x.com/ramen_giragira2" target="_blank" rel="noopener noreferrer">お店の情報 ↗</a>
           </div>
         </article>
@@ -696,7 +706,6 @@
           <p class="shop-desc">房総の味を感じる旨辛スープ。麺のあとにご飯を加えて、おじやまで楽しめる。</p>
           <p class="shop-address">習志野市大久保 1-16-18 プラザグレミオ 1F</p>
           <div class="card-links">
-            <a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%88%BF%E7%B7%8F%E5%BC%8F%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%E4%BA%BA%E5%8A%9B%E8%88%B9%20%E7%BF%92%E5%BF%97%E9%87%8E%E5%B8%82%E5%A4%A7%E4%B9%85%E4%BF%9D1-16-18" target="_blank" rel="noopener noreferrer">地図を見る ↗</a>
             <a href="https://jinrikisen.com/" target="_blank" rel="noopener noreferrer">お店の情報 ↗</a>
           </div>
         </article>
@@ -707,7 +716,6 @@
           <p class="shop-desc">煮干しの香りをまとった油そば。2種類の麺といろいろなトッピングで自分好みに。</p>
           <p class="shop-address">習志野市大久保 3-13-12</p>
           <div class="card-links">
-            <a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%81%82%E3%81%B6%E3%82%89%E3%81%9D%E3%81%B0%E4%BA%8C%E4%BB%A3%E7%9B%AE%E3%81%99%E3%81%9A%E3%82%84%20%E7%BF%92%E5%BF%97%E9%87%8E%E5%B8%82%E5%A4%A7%E4%B9%85%E4%BF%9D3-13-12" target="_blank" rel="noopener noreferrer">地図を見る ↗</a>
             <a href="https://okubosyoutengai.wordpress.com/category/%E3%81%8A%E5%BA%97%E7%B4%B9%E4%BB%8B/" target="_blank" rel="noopener noreferrer">商店街の紹介 ↗</a>
           </div>
         </article>
@@ -718,8 +726,47 @@
           <p class="shop-desc">駅近くにオープンした家系ラーメン店。豚骨醤油の濃厚な味わいを楽しみたい方に。</p>
           <p class="shop-address">習志野市大久保 1-24-6</p>
           <div class="card-links">
-            <a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%87%8E%E4%B8%AD%E5%AE%B6%20%E4%BA%AC%E6%88%90%E5%A4%A7%E4%B9%85%E4%BF%9D%E5%BA%97" target="_blank" rel="noopener noreferrer">地図を見る ↗</a>
             <a href="https://x.com/Nonakaya_G" target="_blank" rel="noopener noreferrer">お店の情報 ↗</a>
+          </div>
+        </article>
+
+        <article class="shop-card" data-tags="miso rich" data-search="らーめん大 まる虎 味噌 みそ 濃い味 京成大久保">
+          <div class="card-top"><span class="card-number">09 / OKUBO</span><span class="tag">味噌</span></div>
+          <h3>らーめん大○虎<small>DAI MARUTORA</small></h3>
+          <p class="shop-desc">濃い味噌ラーメンなどを提供する、京成大久保駅近くの一軒。</p>
+          <p class="shop-address">習志野市大久保 1-18-12</p>
+          <div class="card-links">
+            <a href="https://x.com/ramendaitora" target="_blank" rel="noopener noreferrer">お店の情報 ↗</a>
+          </div>
+        </article>
+
+        <article class="shop-card" data-tags="rich" data-search="横浜家系ラーメン 蓮 れん 豚骨 醤油 家系 ライス">
+          <div class="card-top"><span class="card-number">10 / OKUBO</span><span class="tag orange">家系</span></div>
+          <h3>横浜家系ラーメン 蓮<small>REN</small></h3>
+          <p class="shop-desc">店炊きの豚骨醤油スープが特徴。ライスと一緒に楽しめる家系ラーメン。</p>
+          <p class="shop-address">習志野市大久保 1-16-13</p>
+          <div class="card-links">
+            <a href="https://x.com/ren_yokohama9" target="_blank" rel="noopener noreferrer">お店の情報 ↗</a>
+          </div>
+        </article>
+
+        <article class="shop-card" data-tags="rich" data-search="一聚丸 いちじゅうまる 豚骨 とんこつ 牛骨 つけ麺 ラーメン酒場">
+          <div class="card-top"><span class="card-number">11 / OKUBO</span><span class="tag orange">豚骨・牛骨</span></div>
+          <h3>一聚丸<small>ICHIJUMARU</small></h3>
+          <p class="shop-desc">豚骨ラーメンや牛骨ラーメンを提供。おつまみも楽しめるラーメン酒場。</p>
+          <p class="shop-address">習志野市大久保 3-11-24</p>
+          <div class="card-links">
+            <a href="https://www.hotpepper.jp/strJ004634521/" target="_blank" rel="noopener noreferrer">店舗情報 ↗</a>
+          </div>
+        </article>
+
+        <article class="shop-card" data-tags="rich" data-search="限界を超えろ 京成大久保校 二郎系 G系 ラーメン">
+          <div class="card-top"><span class="card-number">12 / OKUBO</span><span class="tag orange">二郎系</span></div>
+          <h3>限界を超えろ 京成大久保校<small>GENKAI WO KOERO</small></h3>
+          <p class="shop-desc">二郎系のボリューム感あるG系ラーメン。しっかり食べたい日におすすめ。</p>
+          <p class="shop-address">習志野市大久保 3-9-12</p>
+          <div class="card-links">
+            <a href="https://x.com/GWK_Okubo" target="_blank" rel="noopener noreferrer">お店の情報 ↗</a>
           </div>
         </article>
       </div>

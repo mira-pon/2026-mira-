@@ -335,7 +335,15 @@
       align-items: center;
       justify-content: space-between;
       gap: 10px;
+      flex-wrap: wrap;
       margin-bottom: 17px;
+    }
+
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 4px;
     }
 
     .card-number {
@@ -630,16 +638,23 @@
           <p class="eyebrow">FIND YOUR FAVORITE</p>
           <h2 id="shops-title">大久保の、麺めぐり。</h2>
         </div>
-        <p class="section-note">習志野市大久保の商店街と駅周辺から、個性の違う12店をピックアップ。<br>気分に合わせて、今日の一軒を見つけてください。</p>
+        <p class="section-note">習志野市大久保の商店街と駅周辺から、個性の違う14店をピックアップ。<br>気分に合わせて、今日の一軒を見つけてください。</p>
       </div>
 
       <div class="toolbar">
-        <div class="filters" role="group" aria-label="ジャンルで絞り込む">
+        <div class="filters" role="group" aria-label="ラーメンのジャンルで絞り込む">
           <button class="filter" type="button" data-filter="all" aria-pressed="true">すべて</button>
           <button class="filter" type="button" data-filter="miso" aria-pressed="false">味噌</button>
-          <button class="filter" type="button" data-filter="rich" aria-pressed="false">こってり</button>
-          <button class="filter" type="button" data-filter="light" aria-pressed="false">あっさり</button>
+          <button class="filter" type="button" data-filter="shio" aria-pressed="false">塩</button>
+          <button class="filter" type="button" data-filter="shoyu" aria-pressed="false">しょうゆ</button>
+          <button class="filter" type="button" data-filter="tori-paitan" aria-pressed="false">鶏白湯</button>
+          <button class="filter" type="button" data-filter="tonkotsu-shoyu" aria-pressed="false">豚骨醤油</button>
+          <button class="filter" type="button" data-filter="tonkotsu-gyukotsu" aria-pressed="false">豚骨・牛骨</button>
           <button class="filter" type="button" data-filter="abura" aria-pressed="false">油そば</button>
+          <button class="filter" type="button" data-filter="jiro" aria-pressed="false">二郎系</button>
+          <button class="filter" type="button" data-filter="local" aria-pressed="false">ご当地・旨辛</button>
+          <button class="filter" type="button" data-filter="rich" aria-pressed="false">濃厚・つけ麺</button>
+          <button class="filter" type="button" data-filter="chuka" aria-pressed="false">中華料理</button>
         </div>
         <label>
           <span class="visually-hidden">店名やジャンルで検索</span>
@@ -647,11 +662,11 @@
         </label>
       </div>
 
-      <p class="results-line" id="results-count" aria-live="polite">12店を掲載中</p>
+      <p class="results-line" id="results-count" aria-live="polite">14店を掲載中</p>
 
       <div class="shop-grid" id="shop-grid">
         <article class="shop-card" data-tags="miso" data-search="パンケ 札幌 味噌 みそ 西山麺">
-          <div class="card-top"><span class="card-number">01 / OKUBO</span><span class="tag">味噌</span></div>
+          <div class="card-top"><span class="card-number">01 / OKUBO</span><span class="card-tags"><span class="tag">味噌</span></span></div>
           <h3>らーめん パンケ<small>PANKE</small></h3>
           <p class="shop-desc">熟成味噌のコクと札幌直送の西山麺。地元で長く親しまれる味噌ラーメン。</p>
           <p class="shop-address">習志野市大久保 2-1-1</p>
@@ -660,8 +675,8 @@
           </div>
         </article>
 
-        <article class="shop-card" data-tags="rich" data-search="どろそば屋 ひろし 豚そば 鶏そば 濃厚 つけ麺">
-          <div class="card-top"><span class="card-number">02 / OKUBO</span><span class="tag orange">濃厚</span></div>
+        <article class="shop-card" data-tags="shio rich" data-search="どろそば屋 ひろし 豚そば 鶏そば 塩そば にぼしそば 濃厚 つけ麺">
+          <div class="card-top"><span class="card-number">02 / OKUBO</span><span class="card-tags"><span class="tag orange">濃厚</span><span class="tag green">塩</span></span></div>
           <h3>どろそば屋 ひろし<small>DOROSOBA HIROSHI</small></h3>
           <p class="shop-desc">麺にしっかり絡む濃厚スープ。豚そば、鶏そば、つけ麺と食べ比べも。</p>
           <p class="shop-address">習志野市大久保 3-12-5</p>
@@ -670,8 +685,8 @@
           </div>
         </article>
 
-        <article class="shop-card" data-tags="light" data-search="麺家 西陣 ダムカレー カレー あっさり">
-          <div class="card-top"><span class="card-number">03 / OKUBO</span><span class="tag green">あっさり系</span></div>
+        <article class="shop-card" data-tags="shoyu shio" data-search="麺家 西陣 ダムカレー カレー あっさり しょうゆ 塩 中華そば">
+          <div class="card-top"><span class="card-number">03 / OKUBO</span><span class="card-tags"><span class="tag green">しょうゆ</span><span class="tag green">塩</span></span></div>
           <h3>麺家 西陣<small>MENYA NISHIJIN</small></h3>
           <p class="shop-desc">名物は見た目も楽しいダムカレーラーメン。あっさり系を中心に多彩な麺が揃う。</p>
           <p class="shop-address">習志野市大久保 3-13-4</p>
@@ -680,8 +695,8 @@
           </div>
         </article>
 
-        <article class="shop-card" data-tags="rich" data-search="麺屋 時茂 ときしげ 鶏白湯 醤油 塩">
-          <div class="card-top"><span class="card-number">04 / OKUBO</span><span class="tag orange">鶏白湯</span></div>
+        <article class="shop-card" data-tags="tori-paitan shoyu shio" data-search="麺屋 時茂 ときしげ 鶏白湯 醤油 しょうゆ 塩">
+          <div class="card-top"><span class="card-number">04 / OKUBO</span><span class="card-tags"><span class="tag orange">鶏白湯</span><span class="tag green">しょうゆ</span><span class="tag green">塩</span></span></div>
           <h3>麺屋 時茂<small>TOKISHIGE</small></h3>
           <p class="shop-desc">鶏の旨みを味わう鶏白湯が看板。醤油・塩など、好みの味で楽しめる一杯。</p>
           <p class="shop-address">習志野市大久保 1-18-9</p>
@@ -690,8 +705,8 @@
           </div>
         </article>
 
-        <article class="shop-card" data-tags="rich" data-search="戯拉戯拉 ぎらぎら 豚骨 醤油 自家製麺">
-          <div class="card-top"><span class="card-number">05 / OKUBO</span><span class="tag orange">豚骨醤油</span></div>
+        <article class="shop-card" data-tags="tonkotsu-shoyu" data-search="戯拉戯拉 ぎらぎら 豚骨 醤油 しょうゆ 自家製麺">
+          <div class="card-top"><span class="card-number">05 / OKUBO</span><span class="card-tags"><span class="tag orange">豚骨醤油</span></span></div>
           <h3>戯拉戯拉 京成大久保店<small>GIRAGIRA</small></h3>
           <p class="shop-desc">濃厚な豚骨醤油と自家製麺が自慢。しっかり食べたい日にうれしい一杯。</p>
           <p class="shop-address">習志野市大久保 3-12-11</p>
@@ -700,8 +715,8 @@
           </div>
         </article>
 
-        <article class="shop-card" data-tags="rich" data-search="房総式ラーメン 人力船 じんりきせん 旨辛 鶏肉 おじや">
-          <div class="card-top"><span class="card-number">06 / OKUBO</span><span class="tag">ご当地麺</span></div>
+        <article class="shop-card" data-tags="local shoyu miso" data-search="房総式ラーメン 人力船 じんりきせん 旨辛 醤油 しょうゆ 味噌 みそ カレー 鶏肉 おじや">
+          <div class="card-top"><span class="card-number">06 / OKUBO</span><span class="card-tags"><span class="tag">ご当地</span><span class="tag green">しょうゆ</span><span class="tag">味噌</span></span></div>
           <h3>房総式ラーメン 人力船<small>JINRIKISEN</small></h3>
           <p class="shop-desc">房総の味を感じる旨辛スープ。麺のあとにご飯を加えて、おじやまで楽しめる。</p>
           <p class="shop-address">習志野市大久保 1-16-18 プラザグレミオ 1F</p>
@@ -711,7 +726,7 @@
         </article>
 
         <article class="shop-card" data-tags="abura" data-search="あぶらそば 二代目すずや 油そば 煮干し 魚介">
-          <div class="card-top"><span class="card-number">07 / OKUBO</span><span class="tag green">油そば</span></div>
+          <div class="card-top"><span class="card-number">07 / OKUBO</span><span class="card-tags"><span class="tag green">油そば</span></span></div>
           <h3>あぶらそば 二代目すずや<small>SUZUYA</small></h3>
           <p class="shop-desc">煮干しの香りをまとった油そば。2種類の麺といろいろなトッピングで自分好みに。</p>
           <p class="shop-address">習志野市大久保 3-13-12</p>
@@ -720,8 +735,8 @@
           </div>
         </article>
 
-        <article class="shop-card" data-tags="rich" data-search="野中家 のなかや 家系 豚骨 醤油 ラーメン">
-          <div class="card-top"><span class="card-number">08 / OKUBO</span><span class="tag orange">家系</span></div>
+        <article class="shop-card" data-tags="tonkotsu-shoyu" data-search="野中家 のなかや 家系 豚骨 醤油 しょうゆ ラーメン">
+          <div class="card-top"><span class="card-number">08 / OKUBO</span><span class="card-tags"><span class="tag orange">豚骨醤油</span></span></div>
           <h3>横濱家系ラーメン 野中家<small>NONAKAYA</small></h3>
           <p class="shop-desc">駅近くにオープンした家系ラーメン店。豚骨醤油の濃厚な味わいを楽しみたい方に。</p>
           <p class="shop-address">習志野市大久保 1-24-6</p>
@@ -730,8 +745,8 @@
           </div>
         </article>
 
-        <article class="shop-card" data-tags="miso rich" data-search="らーめん大 まる虎 味噌 みそ 濃い味 京成大久保">
-          <div class="card-top"><span class="card-number">09 / OKUBO</span><span class="tag">味噌</span></div>
+        <article class="shop-card" data-tags="miso" data-search="らーめん大 まる虎 味噌 みそ 濃い味 京成大久保">
+          <div class="card-top"><span class="card-number">09 / OKUBO</span><span class="card-tags"><span class="tag">味噌</span></span></div>
           <h3>らーめん大○虎<small>DAI MARUTORA</small></h3>
           <p class="shop-desc">濃い味噌ラーメンなどを提供する、京成大久保駅近くの一軒。</p>
           <p class="shop-address">習志野市大久保 1-18-12</p>
@@ -740,8 +755,8 @@
           </div>
         </article>
 
-        <article class="shop-card" data-tags="rich" data-search="横浜家系ラーメン 蓮 れん 豚骨 醤油 家系 ライス">
-          <div class="card-top"><span class="card-number">10 / OKUBO</span><span class="tag orange">家系</span></div>
+        <article class="shop-card" data-tags="tonkotsu-shoyu" data-search="横浜家系ラーメン 蓮 れん 豚骨 醤油 しょうゆ 家系 ライス">
+          <div class="card-top"><span class="card-number">10 / OKUBO</span><span class="card-tags"><span class="tag orange">豚骨醤油</span></span></div>
           <h3>横浜家系ラーメン 蓮<small>REN</small></h3>
           <p class="shop-desc">店炊きの豚骨醤油スープが特徴。ライスと一緒に楽しめる家系ラーメン。</p>
           <p class="shop-address">習志野市大久保 1-16-13</p>
@@ -750,8 +765,8 @@
           </div>
         </article>
 
-        <article class="shop-card" data-tags="rich" data-search="一聚丸 いちじゅうまる 豚骨 とんこつ 牛骨 つけ麺 ラーメン酒場">
-          <div class="card-top"><span class="card-number">11 / OKUBO</span><span class="tag orange">豚骨・牛骨</span></div>
+        <article class="shop-card" data-tags="tonkotsu-gyukotsu" data-search="一聚丸 いちじゅうまる 豚骨 とんこつ 牛骨 つけ麺 ラーメン酒場">
+          <div class="card-top"><span class="card-number">11 / OKUBO</span><span class="card-tags"><span class="tag orange">豚骨・牛骨</span></span></div>
           <h3>一聚丸<small>ICHIJUMARU</small></h3>
           <p class="shop-desc">豚骨ラーメンや牛骨ラーメンを提供。おつまみも楽しめるラーメン酒場。</p>
           <p class="shop-address">習志野市大久保 3-11-24</p>
@@ -760,13 +775,33 @@
           </div>
         </article>
 
-        <article class="shop-card" data-tags="rich" data-search="限界を超えろ 京成大久保校 二郎系 G系 ラーメン">
-          <div class="card-top"><span class="card-number">12 / OKUBO</span><span class="tag orange">二郎系</span></div>
+        <article class="shop-card" data-tags="jiro" data-search="限界を超えろ 京成大久保校 二郎系 G系 ラーメン">
+          <div class="card-top"><span class="card-number">12 / OKUBO</span><span class="card-tags"><span class="tag orange">二郎系</span></span></div>
           <h3>限界を超えろ 京成大久保校<small>GENKAI WO KOERO</small></h3>
           <p class="shop-desc">二郎系のボリューム感あるG系ラーメン。しっかり食べたい日におすすめ。</p>
           <p class="shop-address">習志野市大久保 3-9-12</p>
           <div class="card-links">
             <a href="https://x.com/GWK_Okubo" target="_blank" rel="noopener noreferrer">お店の情報 ↗</a>
+          </div>
+        </article>
+
+        <article class="shop-card" data-tags="chuka shoyu miso" data-search="日高屋 京成大久保店 ひだかや 中華そば しょうゆ 醤油 味噌ラーメン 中華料理">
+          <div class="card-top"><span class="card-number">13 / OKUBO</span><span class="card-tags"><span class="tag">中華料理</span><span class="tag green">しょうゆ</span><span class="tag">味噌</span></span></div>
+          <h3>日高屋 京成大久保店<small>HIDAKAYA</small></h3>
+          <p class="shop-desc">駅近の中華食堂。中華そばや味噌ラーメンなど、気軽に麺メニューを楽しめる。</p>
+          <p class="shop-address">習志野市大久保 1-24-3</p>
+          <div class="card-links">
+            <a href="https://hidakaya.hiday.co.jp/hits/ja/shop/1/detail/455.html" target="_blank" rel="noopener noreferrer">お店の情報 ↗</a>
+          </div>
+        </article>
+
+        <article class="shop-card" data-tags="chuka" data-search="桂林餃子 満足 京成大久保駅前店 けいりんぎょうざ まんぞく 豚バラ角煮そば 麺料理 中華料理">
+          <div class="card-top"><span class="card-number">14 / OKUBO</span><span class="card-tags"><span class="tag">中華料理</span></span></div>
+          <h3>桂林餃子 満足<small>KEIRIN GYOZA MANZOKU</small></h3>
+          <p class="shop-desc">餃子や本格中華に加え、豚バラ角煮入りそばなどの麺料理も楽しめる。</p>
+          <p class="shop-address">習志野市大久保 1-23-11</p>
+          <div class="card-links">
+            <a href="https://r.gnavi.co.jp/k8k93dz80000/" target="_blank" rel="noopener noreferrer">店舗情報 ↗</a>
           </div>
         </article>
       </div>
